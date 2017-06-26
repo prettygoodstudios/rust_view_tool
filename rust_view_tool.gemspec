@@ -1,0 +1,26 @@
+# coding: utf-8
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'rust_view_tool/version'
+
+Gem::Specification.new do |spec|
+  spec.name          = "rust_view_tool"
+  spec.version       = RustViewTool::VERSION
+  spec.authors       = ["Miguel Rust"]
+  spec.email         = ["jordan@devcamp.com"]
+
+  spec.summary       = %q{Creates a copyright footer.}
+  spec.description   = %q{Creates a copyright footer.}
+  spec.homepage      = "Creates a copyright footer.."
+  spec.license       = "MIT"
+
+  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
+    f.match(%r{^(test|spec|features)/})
+  end
+  spec.bindir        = "exe"
+  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.require_paths = ["lib"]
+
+  spec.add_development_dependency "bundler", "~> 1.13"
+  spec.add_development_dependency "rake", "~> 10.0"
+end
