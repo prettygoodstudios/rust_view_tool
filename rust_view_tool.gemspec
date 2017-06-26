@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Miguel Rust"]
   spec.email         = ["jordan@devcamp.com"]
 
-  spec.summary       = %q{Creates a copyright footer.}
-  spec.description   = %q{Creates a copyright footer.}
-  spec.homepage      = "Creates a copyright footer.."
+  spec.summary       = %q{Various view specific methds for an application.}
+  spec.description   = %q{Various view specific methds for an application1.}
+  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
